@@ -1,0 +1,86 @@
+:root {
+    --textWhite: hsl(200, 60%, 99%);
+    --textGray: hsl(226, 11%, 37%);
+    --checkBox: hsl(3, 86%, 64%);
+    --backgroundOrange: hsl(3, 71%, 56%);
+    --background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    --backgroundWhite: hsl(217, 61%, 90%);
+    --backgroundGray: hsl(226, 25%, 17%);
+    --fontFamily: "Onest", sans-serif;
+    /*--backgroundWhite: #FDFFFC;*/
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    margin: 0px 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    background-color: var(--backgroundGray);
+}
+
+.container-logo {
+    width: auto;
+    height: auto;
+    border: none;
+    display: grid;
+    place-items: center;
+}
+
+.container-logo img {
+    object-fit: contain;
+}
+
+header img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 14px;
+    border-radius: 14px;
+    margin: 0px 0px 22px;
+  }
+
+  .container-logo svg {
+    width: 150px;
+    height: auto;
+  }
+
+  header img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container-logo svg {
+    width: 135px;
+  }
+}
+
+@media (max-width: 300px) {
+  header {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .container-logo svg {
+    width: 120px;
+  }
+
+  header img {
+    width: 20px;
+    height: 20px;
+  }
+}

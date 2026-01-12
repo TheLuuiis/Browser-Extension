@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+:root {
+    --textWhite: hsl(200, 60%, 99%);
+    --textGray: hsl(226, 11%, 37%);
+    --checkBox: hsl(3, 86%, 64%);
+    --backgroundOrange: hsl(3, 71%, 56%);
+    --background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    --backgroundWhite: hsl(217, 61%, 90%);
+    --fontFamily: "Onest", sans-serif;
+    /*--backgroundWhite: #FDFFFC;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    background: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--fontFamily);
+}
+
+.containerApp {
+    width: 100%;
+    max-width: 75rem;
+    height: auto;
+    display: flex;
+    margin: 0 auto;     
+    flex: 1 0 auto;  
+    padding: 25px 0px 0px;
+    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .containerApp {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerApp {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerApp {
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .containerApp {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 300px) {
+  .containerApp {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
