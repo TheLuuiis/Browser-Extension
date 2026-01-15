@@ -23,6 +23,22 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: var(--fontFamily);
+    transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+body.light-theme {
+  background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+  color: #0f172a;
+}
+
+body.dark-theme {
+  background: linear-gradient(180deg, #040918 0%, #091540 100%);
+  color: #e5e7eb;
+}
+
+body.light-theme .options button {
+  color: var(--textGray);
+  background-color: transparent;
 }
 
 .containerApp {
